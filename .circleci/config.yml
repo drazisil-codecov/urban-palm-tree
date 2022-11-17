@@ -22,7 +22,7 @@ jobs:
           file: package.json
           xtra_args:
             '-V'
-          flags: $(eval echo \$$CIRCLE_SHA1)" $CIRCLE_SHA1
+          flags: $(eval echo \$$CIRCLE_SHA1)"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
