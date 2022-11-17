@@ -21,7 +21,7 @@ jobs:
       - codecov/upload:
           file: package.json
           xtra_args:
-            '-V'
+            '-v'
           flags: $(eval echo \$$CIRCLE_SHA1)
 
 # Invoke jobs via workflows
