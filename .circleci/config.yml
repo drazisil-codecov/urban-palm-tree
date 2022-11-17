@@ -23,10 +23,10 @@ jobs:
 
       - codecov/upload:
           file: package.json
-          upload_name:  $CIRCLE_USERNAME
+          upload_name:  CIRCLE_USERNAME
           xtra_args:
             '-V'
-          flags: $CIRCLE_SHA1
+          flags: CIRCLE_SHA1
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
